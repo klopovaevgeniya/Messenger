@@ -1,0 +1,23 @@
+﻿<Window x:Class="Messenger.ChatWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Messenger"
+        mc:Ignorable="d"
+        Title="ChatWindow" Height="400" Width="600" Background="#FF0E0C18">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label x:Name="label" Content="Пользователи:" FontFamily="Cascadia Code SemiBold" Foreground="White" Margin="5"/>
+        <ListBox x:Name="usersListBox" Grid.Row="1" FontFamily="Cascadia Code SemiBold" Foreground="White" Margin="5"/>
+
+        <ListBox x:Name="messagesListBox" Grid.Column="1" FontFamily="Cascadia Code SemiBold" Foreground="White" Margin="5"/>
+    </Grid>
+</Window>
